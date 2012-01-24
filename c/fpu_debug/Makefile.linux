@@ -1,0 +1,17 @@
+.PHONY: all clean
+
+all: dynfptest
+
+clean:
+	-rm libfpset.so* dynfptest *.o
+
+dynfptest: libfpset.so.1.0 main.c
+	gcc -pthread -Wall -I. -L. main.c -lfpset -o dynfptest -DLINUX_BLD
+	@echo "***Don't forget to add the current directory to LD_LIBRARY_PATH"
+	@echo "***I.e. 'export LD_LIBRARY_PATH=.'"
+
+libfpset.so.1.0: fpsetlib.c fpsetlib.h
+	gcc -Wall -fPIC -c fpsetlib.c -DLINUX_BLD
+	gcc -shared -Wl,-soname,libfpset.so.1 -o libfpset.so.1.0 fpsetlib.o -lm
+	ln -sf libfpset.so.1.0 libfpset.so.1
+	ln -sf libfpset.so.1.0 libfpset.so

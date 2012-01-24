@@ -1,0 +1,51 @@
+body { 
+margin : 0;
+padding : 0;
+font : 75% "Trebuchet MS", arial, helvetica, sans-serif;
+line-height : 1.8em;
+color : #666;
+background : #fff;
+}
+
+#header {
+height : 100px;
+border-top : 10px solid #08348e;
+color : #000;
+}
+
+#footer {
+clear : both;
+height : 100px;
+border-top : 5px solid #08348e;
+margin : 20px;
+padding : 5px;
+text-align : center;
+background : transparent url("/static/cardiomonix.png") no-repeat top center;
+color : #000;
+}
+
+table {
+border-collapse : collapse;
+margin : 0 0 0 3em;
+}
+
+thead {
+background-color : #08348e;
+color : #FFF;
+}
+
+
+table, th, td {
+border : 1px solid black;
+padding : 0.25em 0.5em 0.25em 0.5em;
+}
+ 
+h1 { 
+margin : 0;
+padding : 1.5em 0 0 2em;
+text-transform : uppercase;
+font-size : 2em;
+letter-spacing : 3px;
+color : #08348e;
+background : transparent;
+} 

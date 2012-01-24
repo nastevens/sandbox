@@ -1,0 +1,13 @@
+.PHONY: all clean
+
+all: dynfptest.exe
+
+clean:
+	-del libfpset.dll dynfptest.exe *.o
+
+dynfptest.exe: libfpset.dll main.c
+	gcc -pthread -Wall -I. -L. main.c -lfpset -o dynfptest.exe
+
+libfpset.dll: fpsetlib.c fpsetlib.h
+	gcc -Wall -c fpsetlib.c
+	gcc -shared -o libfpset.dll fpsetlib.o -lm

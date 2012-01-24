@@ -1,0 +1,4 @@
+A simple demonstration of a ping application running on any WSGI compliant server
+
+To run using web.py built-in server execute:
+  python main.py 8080
