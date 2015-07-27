@@ -1,0 +1,5 @@
+[package]
+
+name = "rust_linked_lists"
+version = "0.0.1"
+authors = ["Nick Stevens <Nick.Stevens@digi.com>"]
