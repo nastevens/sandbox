@@ -1,0 +1,19 @@
+Have it look 3-4 plies ahead
+Able to generate table for first 10-15 plies?
+Number of plies reduces each time a card is played
+
+Round 1: (4 raises) * ((52 cards) * (4 placements)) = 832 \___Difference of 16 each time
+Round 2: (4 raises) * ((51 cards) * (4 placements)) = 816 /
+                                                     ------
+                                                     678912 nodes
+
+16^4*(53-round)*(52-round)*(51-round)*(50-round) = 5000000
+
+
+
+
+Round 10-12: 43 cards = 688*672*656 = 303,000,000
+Round 30-31: 129536
+Round 50-51: 1536
+
+Can do up to about 5,000,000 in 0.5 seconds
