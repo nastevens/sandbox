@@ -1,0 +1,193 @@
+html {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #777;
+}
+
+.page {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 10px 0;
+    border-radius: 5px;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer nav {
+    display: table-cell;
+    background-color: rgba(227, 234, 235, 0.8);
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+    width: 150px;
+}
+
+nav header {
+    font-weight: 700;
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    list-style: none;
+    margin: 5px 30px 0 0;
+    padding: 5px 0 0 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.25s all;
+}
+
+nav ul li :hover {
+    background-color: #999;
+}
+
+nav ul li i {
+    margin-right: 5px;
+}
+
+.maincontainer main {
+    display: table-cell;
+    background-color: #9c9;
+    width: 100%;
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+}
+
+.search {
+    display: table;
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 0 15px 0;
+    background-color: white;
+    border-radius: 4px;
+    border-collapse: separate;
+}
+
+.search span {
+    display: table-cell;
+    background-color: #AAA;
+    padding: 2px 9px 2px 9px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.search input {
+    display: table-cell;
+    border-style: none;
+}
+
+.feed {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.feed li {
+    margin: 3px 0 12px 0;
+}
+
+.list-item-meal {
+    display: block;
+    font-size: 1.2em;
+}
+
+.list-item-organizer::before {
+    content: 'Organizer: ';
+}
+
+.list-item-organizer {
+    display: block;
+    font-style: italic;
+}
+
+.list-item-date {
+    display: block;
+}
+
+
+footer {
+    font: sans-serif;
+    font-size: 0.6em;
+    clear: both;
+    background: #cc9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* .button { */
+/*     border-top: 1px solid #96d1f8; */
+/*     background: #65a9d7; */
+/*     background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7)); */
+/*     background: -webkit-linear-gradient(top, #3e779d, #65a9d7); */
+/*     background: -moz-linear-gradient(top, #3e779d, #65a9d7); */
+/*     background: -ms-linear-gradient(top, #3e779d, #65a9d7); */
+/*     background: -o-linear-gradient(top, #3e779d, #65a9d7); */
+/*     padding: 7px 14px; */
+/*     -webkit-border-radius: 9px; */
+/*     -moz-border-radius: 9px; */
+/*     border-radius: 9px; */
+/*     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0; */
+/*     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0; */
+/*     box-shadow: rgba(0,0,0,1) 0 1px 0; */
+/*     text-shadow: rgba(0,0,0,.4) 0 1px 0; */
+/*     color: white; */
+/*     font-size: 17px; */
+/*     font-family: Georgia, serif; */
+/*     text-decoration: none; */
+/*     vertical-align: middle; */
+/* } */
+/* .button:hover { */
+/*     border-top-color: #28597a; */
+/*     background: #28597a; */
+/*     color: #ccc; */
+/* } */
+/* .button:active { */
+/*     border-top-color: #1b435e; */
+/*     background: #1b435e; */
+/* } */
+
+/* } */
+/* .feed { */
+/*     border-bottom-color: rgb(225,232,237); */
+/*     border-bottom-style: solid; */
+/*     border-bottom-width: 1px; */
+/*     color: rgb(41,47,51); */
+/*     cursor: pointer; */
+/*     display: block; */
+/*     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+/*     font-size: 14px; */
+/*     height: 62px; */
+/*     line-height: 18px; */
+/*     list-style-image: none; */
+/*     list-style-position: outside; */
+/*     list-style-type: none; */
+/*     min-height: 51px; */
+/*     padding-bottom: 9px; */
+/*     padding-left: 12px; */
+/*     padding-right: 12px; */
+/*     padding-top: 9px; */
+/*     position: relative; */
+/*     text-align: left; */
+/*     width: 564px; */
+/* } */
+
