@@ -1,0 +1,8 @@
+To make sources for GumStix, simply issue the "make" command in the root
+program directory.  This will built both the GumStix communication daemon
+(gscomd) and the GumStix communication test program (gscomtest).  Both 
+binaries will be stripped of debugging information.  To built without 
+stripping, run "make debug"
+
+Issuing "make gscomtest" or "make gscomd" will make only the indicated
+binary, and will not strip debugging information from the binaries.
