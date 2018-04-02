@@ -1,0 +1,7 @@
+03-28 16:57:25.504    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Entered onCreateLoader()
+03-28 16:57:33.674    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Entered footerView.OnClickListener.onClick()
+03-28 16:57:33.794    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Starting Place Download
+03-28 16:57:35.004    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Entered addNewPlace()
+03-28 16:57:38.825    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Entered footerView.OnClickListener.onClick()
+03-28 16:57:38.935    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? You already have this location badge
+03-28 16:57:44.455    2087-2087/course.labs.contentproviderlab I/Lab-ContentProvider? Place: The Greenhouse Country: United States

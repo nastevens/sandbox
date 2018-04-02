@@ -1,0 +1,2 @@
+02-08 15:44:34.933    2080-2080/course.labs.intentslab I/Lab-Intents? Entered startImplicitActivation()
+02-08 15:44:34.933    2080-2080/course.labs.intentslab I/Lab-Intents? Chooser Intent Action:android.intent.action.CHOOSER

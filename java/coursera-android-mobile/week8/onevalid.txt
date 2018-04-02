@@ -1,0 +1,5 @@
+03-28 16:53:08.440    2020-2020/? I/Lab-ContentProvider? Entered onCreateLoader()
+03-28 16:53:16.631    2020-2020/? I/Lab-ContentProvider? Entered footerView.OnClickListener.onClick()
+03-28 16:53:16.741    2020-2020/? I/Lab-ContentProvider? Starting Place Download
+03-28 16:53:17.641    2020-2020/? I/Lab-ContentProvider? Entered addNewPlace()
+03-28 16:53:22.241    2020-2020/? I/Lab-ContentProvider? Place: The Greenhouse Country: United States

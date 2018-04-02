@@ -1,0 +1,8 @@
+03-15 21:05:00.615    2384-2384/? I/Lab-Location? Entered footerView.OnClickListener.onClick()
+03-15 21:05:01.125    2384-2384/? I/Lab-Location? Starting Place Download
+03-15 21:05:02.515    2384-2384/? I/Lab-Location? Entered addNewPlace()
+03-15 21:05:05.835    2384-2384/? I/Lab-Location? Entered footerView.OnClickListener.onClick()
+03-15 21:05:06.355    2384-2384/? I/Lab-Location? Starting Place Download
+03-15 21:05:07.546    2384-2384/? I/Lab-Location? Entered addNewPlace()
+03-15 21:05:11.496    2384-2384/? I/Lab-Location? Place: The Greenhouse Country: United States
+03-15 21:05:12.006    2384-2384/? I/Lab-Location? Place: Berwyn Country: United States

@@ -1,0 +1,7 @@
+02-16 17:10:34.661      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered onActivityCreated()
+02-16 17:10:40.841      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered onItemSelected(0)
+02-16 17:10:40.851      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered updateFeedDisplay()
+02-16 17:10:44.242      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered onItemSelected(1)
+02-16 17:10:44.242      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered updateFeedDisplay()
+02-16 17:10:47.380      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered onItemSelected(2)
+02-16 17:10:47.380      904-904/course.labs.fragmentslab I/Lab-Fragments﹕ Entered updateFeedDisplay()

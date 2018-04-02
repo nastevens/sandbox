@@ -1,0 +1,9 @@
+03-28 16:58:33.505    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Entered onCreateLoader()
+03-28 16:58:41.715    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Entered footerView.OnClickListener.onClick()
+03-28 16:58:41.825    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Starting Place Download
+03-28 16:58:42.746    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Entered addNewPlace()
+03-28 16:58:46.866    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Entered footerView.OnClickListener.onClick()
+03-28 16:58:46.976    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Starting Place Download
+03-28 16:58:47.706    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Entered addNewPlace()
+03-28 16:58:52.496    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Place: The Greenhouse Country: United States
+03-28 16:58:52.606    2155-2155/course.labs.contentproviderlab I/Lab-ContentProvider? Place: Berwyn Country: United States

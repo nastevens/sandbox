@@ -1,0 +1,1 @@
+03-09 13:08:45.151    2049-2049/course.labs.notificationslab I/Lab-Notifications﹕ In ensureData(), mIsFresh:true

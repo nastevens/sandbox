@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <instrumentation
+            android:name="android.test.InstrumentationTestRunner"
+            android:targetPackage="course.labs.intentslab" />
+
+    <application>
+        
+        <uses-library android:name="android.test.runner" />
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+03-09 17:48:51.161    2406-2406/course.labs.GraphicsLab I/Lab-Graphics? Creating Bubble at: x:250.0 y:250.0
+03-09 17:48:52.791    2406-2406/course.labs.GraphicsLab I/Lab-Graphics? Creating Bubble at: x:500.0 y:500.0

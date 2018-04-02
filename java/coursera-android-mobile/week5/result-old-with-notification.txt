@@ -1,0 +1,7 @@
+03-09 13:14:37.217    2174-2174/course.labs.notificationslab I/Lab-Notifications﹕ In ensureData(), mIsFresh:false
+03-09 13:14:37.727    2174-2174/course.labs.notificationslab I/Lab-Notifications﹕ Issuing Toast Message
+03-09 13:14:38.247    2174-2192/course.labs.notificationslab I/Lab-Notifications﹕ Entered doInBackground()
+03-09 13:14:56.197    2174-2192/course.labs.notificationslab I/Lab-Notifications﹕ Tweet Download Completed:true
+03-09 13:14:56.707    2174-2192/course.labs.notificationslab I/Lab-Notifications﹕ Entered notify()
+03-09 13:14:57.267    2174-2174/course.labs.notificationslab I/Lab-Notifications﹕ Entered result receiver's onReceive() method
+03-09 13:14:57.777    2174-2174/course.labs.notificationslab I/Lab-Notifications﹕ Notification Area Notification sent
