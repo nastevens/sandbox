@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}XBox Game Voting Application{% endblock %}
+{% block stylesheet %}{{ STATIC_URL }}index_style.css{% endblock %}
+
+{% block body %}
+<div id="wrapper">
+    <div id="header">
+        <h1><a href="/xbox/">Nerdery XBox Voting</a></h1>
+    </div>
+
+	{% if voting_list %}
+	<div id="voting">
+		<h2>Current Standings</h2>
+	    <table>
+	    {% for game in voting_list|dictsort:"title"|dictsortreversed:"votes" %}
+	        <tr>
+	            <th>{{ game.title }}</th>
+	            <td>{{ game.votes }}</td>
+	            <td><a href="/xbox/{{ game.id }}/vote/">Vote</a></td>
+	        </tr>
+	    {% endfor %}    
+	    </table>
+	{% endif %}
+			
+		{% if error_message %}
+		<p id="error">{{ error_message }}</p>
+		{% endif %}
+		
+	    {% if success_message %}
+	    <p id="success">{{ success_message }}</p>
+	    {% endif %}
+			
+		<form action="/xbox/add/" method="post">
+			{% csrf_token %}
+			Add a new game: <input type="text" name="new_title" />
+			<input type="submit" value="Add" />
+		</form>
+	</div>
+
+	{% if owned_list %}
+	<div id="owned">
+		<h2>Owned Games</h2>
+	    <ul>
+	    {{ owned_list|unordered_list }}
+	    </ul>
+	</div>
+	{% endif %}
+    
+	<div id="footer">
+		<p>
+			<a href="manage.htm">Manage owned games</a>
+			{% if DEBUG %}
+			| <a href="clear_cookie.htm">Clear voting cookie</a>
+			{% endif %}
+		</p>
+	</div>
+
+</div>
+
+{% endblock %}

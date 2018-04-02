@@ -1,0 +1,20 @@
+[
+{"pk": 1, "model": "xboxvoting.game", "fields": 
+    {"created": "2012-06-21T00:48:59.115Z", "owned": false, "title": "Bioshock"}},
+{"pk": 2, "model": "xboxvoting.game", "fields": 
+    {"created": "2012-06-21T00:49:46.225Z", "owned": false, "title": "Goldeneye"}},
+{"pk": 3, "model": "xboxvoting.game", "fields": 
+    {"created": "2012-06-21T00:49:55.928Z", "owned": false, "title": "Dragon Age"}},
+{"pk": 4, "model": "xboxvoting.game", "fields": 
+    {"created": "2012-06-21T00:50:02.682Z", "owned": false, "title": "Viva Pinata"}},
+{"pk": 1, "model": "xboxvoting.vote", "fields":
+    {"game": 1, "created": "2012-06-21T00:48:59.117Z"}},
+{"pk": 2, "model": "xboxvoting.vote", "fields":
+    {"game": 2, "created": "2012-06-21T00:49:46.227Z"}}, 
+{"pk": 3, "model": "xboxvoting.vote", "fields":
+    {"game": 3, "created": "2012-06-21T00:49:55.930Z"}}, 
+{"pk": 4, "model": "xboxvoting.vote", "fields":
+    {"game": 4, "created": "2012-06-21T00:50:02.685Z"}}, 
+{"pk": 5, "model": "xboxvoting.vote", "fields":
+    {"game": 1, "created": "2012-06-21T00:50:07.221Z"}}
+]
