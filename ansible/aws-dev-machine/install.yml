@@ -1,0 +1,57 @@
+---
+- name: Install devtools
+  hosts: 127.0.0.1
+  connection: local
+  become: true
+
+  tasks:
+    - name: Update all packages to the latest version
+      apt:
+        upgrade: yes
+        update_cache: yes
+        autoclean: yes
+        autoremove: yes
+
+    - name: Install zsh
+      apt:
+        name: zsh
+
+    - name: Add 'nick' user
+      user:
+        name: nick
+        comment: Nick Stevens
+        shell: /usr/bin/zsh
+        groups: sudo
+        append: yes
+
+    - name: Install build tools
+      apt:
+        name: "{{ packages }}"
+      vars:
+        packages:
+          - build-essential
+          - python-dev
+          - cmake
+          - tmux
+
+    - name: Install ruby
+      apt:
+        name: ruby
+
+    - name: Install homesick
+      gem:
+        name: homesick
+        state: latest
+        user_install: false
+
+    - name: Sync homesick dotfiles
+      shell: |
+        homesick clone https://github.com/nastevens/dotfiles.git
+        homesick symlink --force
+      become: yes
+      become_user: nick
+
+    - name: Install rustup
+      shell: curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path
+      become: yes
+      become_user: nick
