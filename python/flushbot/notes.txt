@@ -1,0 +1,51 @@
+500 Royal Flush
+450 Straight Flush
+400 4 OAK
+350 Full House
+300 Flush
+250 Straight
+200 3 OAK
+150 2 Pair
+100 Pair
+
+Royal Flush = R
+Straight Flush = T
+4 OAK = 4
+Full House = H
+Flush = F
+Straight = S
+3 OAK = 3
+2 Pair = X
+Pair = P
+Nothing = N
+
+4 minutes on clock
+5 points per remaining second
+=1200
+
+4 raise chips
+
+"Perfect" score = 5600
+W/o time: 4400
+
+#Simulate Mouse Click
+import win32api
+import win32con
+win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0,0); win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0,0)
+
+#Separate a 1D stream of pixels back into a 2D list of lists
+testlist = [a for a in test.getdata()]
+grouplist=[testlist[i*10:(i+1)*10] for i in range(10)]
+
+Permutations:
+A
+AA
+AB
+AAA
+AAB
+ABC
+AAAA
+AAAB
+AABB
+AABC
+ABCD
