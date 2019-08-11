@@ -1,0 +1,9 @@
+[package]
+name = "mqtt-zero"
+version = "0.1.0"
+authors = ["Nick Stevens <nick@bitcurry.com"]
+
+[dependencies]
+bitflags = "0.8"
+bytes = "0.4"
+lazy_static = "0.2"
