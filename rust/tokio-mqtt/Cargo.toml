@@ -1,0 +1,15 @@
+[package]
+name = "tokio-mqtt"
+version = "0.1.0"
+authors = ["Nick Stevens <nick@bitcurry.com>"]
+
+[dependencies]
+bytes = "0.4.0"
+futures = "0.1.0"
+mqtt-zero = { path = "../mqtt-zero" }
+tokio-core = "0.1.0"
+tokio-io = "0.1.0"
+tokio-proto = "0.1.0"
+tokio-retry = "0.1.0"
+tokio-service = "0.1.0"
+tokio-timer = "0.1.0"
