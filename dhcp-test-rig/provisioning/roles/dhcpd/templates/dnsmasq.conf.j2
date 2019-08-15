@@ -1,0 +1,12 @@
+# Disable DNS through dnsmasq
+port=53
+
+# Enable DHCP on hub-facing interface
+listen-address={{ external_subnet }}.1
+dhcp-range={{ external_subnet }}.100,{{ external_subnet }}.200,15m
+dhcp-option=option:router,{{ external_subnet }}.1
+dhcp-option=option:dns-server,{{ external_subnet }}.1
+log-dhcp
+
+# Load extra configurations if present
+conf-dir=/etc/dnsmasq.d/,*.conf

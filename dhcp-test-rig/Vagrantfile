@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+N = 5
+INTERFACE = "en12: USB A"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/alpine38"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.cpus = 1
+    vb.memory = "256"
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    apk add python2
+  SHELL
+
+  config.vm.network "public_network", auto_config: false, bridge: "#{INTERFACE}"
+
+  (1..N).each do |machine_id|
+    config.vm.define "machine#{machine_id}" do |machine|
+      machine.vm.provision "ansible" do |ansible|
+        ansible.playbook = "provisioning/playbook.yml"
+        ansible.verbose = "v"
+        ansible.extra_vars = {
+          hostname: "machine#{machine_id}",
+          external_subnet: "192.168.#{20 + machine_id}"
+        }
+      end
+    end
+  end
+end

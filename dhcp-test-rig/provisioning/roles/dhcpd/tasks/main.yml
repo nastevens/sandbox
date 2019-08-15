@@ -1,0 +1,77 @@
+---
+- name: configure hubside network
+  blockinfile:
+    dest: /etc/network/interfaces
+    insertafter: EOF
+    block: |-
+      auto {{ item.interface }}
+      iface {{ item.interface }} inet static
+              address {{ item.ip }}
+              netmask 255.255.255.0
+    marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.interface }}"
+  with_items:
+    - { interface: "eth1", ip: "{{ external_subnet }}.1" }
+
+- name: down hubside network
+  shell: "ifdown {{ item }}"
+  with_items: [ "eth1" ]
+
+- name: up hubside network
+  shell: "ifup {{ item }}"
+  with_items: [ "eth1" ]
+
+- name: enable IP forwarding
+  sysctl:
+    name: net.ipv4.ip_forward
+    value: 1
+    sysctl_set: yes
+    state: present
+    reload: yes
+
+- name: install packages
+  apk:
+    name: awall, dnsmasq, python2, rsyslog
+    state: latest
+    update_cache: yes
+
+- name: configure awall
+  copy:
+    src: awall.json
+    dest: /etc/awall/optional/nat.json
+
+- name: load kernel modules at boot
+  lineinfile:
+    dest: /etc/modules
+    line: "{{ item }}"
+  with_items:
+    - ip_tables
+    - iptable_nat
+
+- name: enable kernel modules
+  modprobe:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - ip_tables
+    - iptable_nat
+
+- name: enable NAT firewall
+  shell: "awall enable nat && awall activate -f"
+
+- name: enable firewall at boot
+  service:
+    name: iptables
+    enabled: yes
+    state: started
+
+- name: configure dnsmasq
+  template:
+    src: dnsmasq.conf.j2
+    dest: /etc/dnsmasq.conf
+  notify: restart dnsmasq
+
+- name: enable dnsmasq
+  service:
+    name: dnsmasq
+    enabled: yes
+    state: started

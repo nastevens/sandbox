@@ -1,0 +1,36 @@
+{
+    "description": "NAT firewall",
+
+    "zone": {
+        "inet": { "iface": "eth0" },
+        "local": { "iface": "eth1" }
+    },
+
+    "policy": [
+        { "in": "_fw", "action": "accept" },
+        { "in": "local", "out": "inet", "action": "accept" }
+    ],
+
+    "snat": [
+        { "out": "inet" }
+    ],
+
+    "filter": [
+        {
+            "in": "inet",
+            "service": "ssh",
+            "action": "accept"
+        },
+        {
+            "in": "local",
+            "service": "dhcp",
+            "action": "accept"
+        },
+        {
+            "in": "local",
+            "service": "dns",
+            "action": "accept"
+        }
+    ]
+}
+
